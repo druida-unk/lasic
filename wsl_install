@@ -1,0 +1,35 @@
+Instalação WLS2 (Windows Subsystem for Linux 2)
+Pré-requisitos:
+Windows 10 Versão 1903 ou superior
+Atualizações mais recentes instaladas
+
+Passos:
+
+1. Habilitar WSL: Abra o PowerShell como administrador e execute:
+
+powershell
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+
+2. Habilitar Virtualização: Execute o seguinte comando no PowerShell:
+
+powershell
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+
+3. Baixar Kernel Linux: Baixe o pacote de atualização do Kernel Linux 
+https://learn.microsoft.com/pt-br/windows/wsl/install-manual#step-4---download-the-linux-kernel-update-package
+
+4. Instalar Kernel: Execute o pacote baixado.
+
+5. Definir WSL2 como padrão: Abra o PowerShell e execute:
+
+powershell
+wsl --set-default-version 2
+
+6. Instalar Distribuição Linux: Abra a Microsoft Store, escolha uma distribuição Linux (Ubuntu, Fedora, etc.) e instale.
+
+7. Verificar Instalação: Abra o PowerShell e execute wsl -l -v para confirmar que a instalação foi bem-sucedida.
+
+Notas:
+Certifique-se de que a virtualização está habilitada nas configurações da BIOS.
+Reinicie o sistema se necessário.
+Espero que essas instruções sejam claras e acessíveis. Se tiver mais perguntas, fique à vontade para perguntar.
