@@ -1,0 +1,55 @@
+Configuração de Ambiente Virtual WSL2 para Django Auth
+Passos:
+1. Abrir WSL2: Abra o terminal WSL2 no Windows.
+
+2. Atualizar Pacotes:
+
+bash
+  Copy code
+sudo apt update && sudo apt upgrade
+3. Instalar Python3 e pip:
+
+bash
+  Copy code
+sudo apt install python3 python3-pip
+4. Instalar virtualenv:
+
+bash
+  Copy code
+pip3 install virtualenv
+
+5. Criar Ambiente Virtual:
+
+bash
+  Copy code
+virtualenv nome_do_ambiente
+
+6. Ativar Ambiente:
+
+bash
+  Copy code
+source nome_do_ambiente/bin/activate
+7. Instalar Django:
+
+bash
+  Copy code
+pip install django
+
+8. Instalar Django Auth:
+
+bash
+  Copy code
+pip install django-allauth
+
+9. Configurar Projeto: Crie e configure seu projeto Django para usar o django-allauth.
+
+Comentários:
+Abrir WSL2: Inicia o terminal WSL2.
+Atualizar Pacotes: Atualiza os pacotes do sistema.
+Instalar Python3 e pip: Instala Python e pip.
+Instalar virtualenv: Instala o pacote para ambientes virtuais.
+Criar Ambiente Virtual: Cria um novo ambiente virtual.
+Ativar Ambiente: Ativa o ambiente virtual.
+Instalar Django: Instala o framework Django.
+Instalar Django Auth: Instala o pacote de autenticação.
+Configurar Projeto: Passo final para configurar o projeto.
