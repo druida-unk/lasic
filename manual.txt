@@ -1,0 +1,34 @@
+Passo a Passo para Autenticação de Usuários com Django
+
+Configuração Inicial
+
+Criar Projeto Django: Inicie um novo projeto Django chamado 'aula'.
+Iniciar Servidor: Inicie o servidor Django para visualizar a tela padrão.
+
+Configuração de URLs
+Criar Aplicação: Crie uma nova aplicação chamada 'usuários'.
+Definir URLs: Configure URLs para as páginas de cadastro e login.
+
+Templates
+Criar Templates: Crie templates HTML para as páginas de cadastro e login.
+
+Views e Formulários
+Criar Views: Defina as views para as páginas de cadastro e login.
+Criar Formulários: Crie formulários para cadastro e login.
+
+Lógica de Cadastro
+Configurar Formulário de Cadastro: Defina os campos necessários como usuário, e-mail e senha.
+Verificar Usuário Existente: Antes de criar um novo usuário, verifique se o nome de usuário já existe.
+Criar Usuário: Utilize o método create_user para criar um novo usuário.
+
+Lógica de Login
+Configurar Formulário de Login: Defina os campos necessários como usuário e senha.
+Autenticar Usuário: Utilize o método authenticate para verificar as credenciais do usuário.
+Login do Usuário: Se a autenticação for bem-sucedida, utilize o método login para logar o usuário.
+Verificação de Autenticação
+
+Verificar Usuário Autenticado: Utilize user.is_authenticated para verificar se o usuário está autenticado.
+Acesso Restrito: Restrinja o acesso a determinadas áreas do site apenas para usuários autenticados.
+
+Finalização
+Testar: Faça testes de cadastro e login para garantir que tudo está funcionando como esperado.
